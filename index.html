@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Ayyan ZainUddin, portfolio, HireVision AI, full stack dev, personal portfolio lifecodes, portfolio design, portfolio website, personal portfolio" />
+    <meta name="description" content="Welcome to Ayyan ZainUddin Portfolio. Full-Stack Web Developer and Android App Developer" />
+    
+    <title>  HireVision AI </title>
+    
+    <!-- Favicon -->
+    <link id='favicon' rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-png">
+    
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- Internal CSS -->
+    <style>
+         .container {
+            width: 100%;
+            max-width: 1550px;
+            margin: auto;
+            padding: 60px;
+            font-size: 20px; /* Adjusted for better readability */
+            font-weight: 900;
+        }
+
+        .section {
+            margin-bottom: 20px;
+            padding: 30px; /* Increased padding for better spacing */
+            border-radius: 8px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+
+        h2 {
+            font-size: 15px; /* Increased heading size */
+            font-weight: 900; /* Bold heading */
+        }
+
+        p {
+            font-size: 15px; /* Increased paragraph size */
+        }
+
+        .btn {
+            font-size: 15px; /* Increased button text size */
+        }
+
+        .form-control {
+            font-size: 15px; /* Increased input text size */
+        }
+
+        .resume-section {
+            margin-right: 30px; /* Space between the two sections */
+        }
+
+        /* Ensure the last section does not have extra margin */
+        .resume-section:last-child {
+            margin-right: 0;
+        }
+
+    </style>
+</head>
+<body oncontextmenu="return false">
+
+    <!-- Navbar -->
+    <header>
+        <a href="/" class="logo"><i class="fab fa-node-js"></i> HireVision AI </a>
+        <div id="menu" class="fas fa-bars"></div>
+        <nav class="navbar">
+            <ul>
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+         <!--       <li><a href="#skills">Skills</a></li>  -->
+                <li><a href="#education">Education</a></li>
+         <!--        <li><a href="#work">Work</a></li> -->
+         <!--       <li><a href="#experience">Experience</a></li> -->
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <!-- Hero section starts -->
+<section class="home" id="home">
+    <div id="particles-js"></div>
+    <div class="content">
+        <h2>Welcome to<br/><span>HireVision AI</span></h2>
+        <p>Connecting talent with  <span class="typing-text">Opportunity through AI.</span></p>
+        <a href="#about" class="btn"><span>click Me</span>
+            <i class="fas fa-arrow-circle-down"></i>
+        </a>
+        <div class="socials">
+            <ul class="social-icons">
+                <li><a class="linkedin" aria-label="LinkedIn" href="https://www.instagram.com/i_m_ayyan.03?igsh=MW9rZXozMG8ybXprdw%3D%3D&utm_source=qr" target="_blank"><i class="fab fa-linkedin"></i></a></li> 
+                <li><a class="github" aria-label="GitHub" href="https://www.instagram.com/i_m_ayyan.03?igsh=MW9rZXozMG8ybXprdw%3D%3D&utm_source=qr" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a class="twitter" aria-label="Twitter" href="https://www.instagram.com/i_m_ayyan.03?igsh=MW9rZXozMG8ybXprdw%3D%3D&utm_source=qr" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a class="telegram" aria-label="Telegram" href="https://www.instagram.com/i_m_ayyan.03?igsh=MW9rZXozMG8ybXprdw%3D%3D&utm_source=qr" target="_blank"><i class="fab fa-telegram-plane"></i></a></li>
+                <li><a class="instagram" aria-label="Instagram" href=https://www.instagram.com/i_m_ayyan.03?igsh=MW9rZXozMG8ybXprdw%3D%3D&utm_source=qr"><i class="fab fa-instagram" target="_blank"></i></a></li>
+                <li><a class="dev" aria-label="Dev" href="https://www.instagram.com/i_m_ayyan.03?igsh=MW9rZXozMG8ybXprdw%3D%3D&utm_source=qr" target="_blank"><i class="fab fa-dev"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="image">
+        <img draggable="false" class="tilt" src="./assets/images/hero.png" alt="">
+    </div>
+</section>
+<!-- Hero section ends -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 section">
+                <h2 style="font-size: 33;font-weight: 900;">Draft Your Resume</h2>
+                <form id="resumeForm">
+                    <div style="font-size: 30px;" class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="skills">Skills</label>
+                        <textarea class="form-control" id="skills" rows="3" placeholder="List your skills (comma-separated)" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Generate Resume</button>
+                </form>
+                <div id="resumeOutput" class="mt-3"></div>
+            </div>
+            <div class="col-md-6 section">
+                <h2>Resume Analyzer</h2>
+                <input type="file" class="form-control mb-2" id="resumeFile" accept=".txt, .pdf, .docx">
+                <textarea class="form-control mb-2" id="jobDescription" rows="5" placeholder="Paste job description here..."></textarea>
+                <button class="btn btn-success" id="analyzeBtn">Analyze Resume</button>
+                <div id="analysisResults" class="mt-3"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Handle resume generation
+        document.getElementById('resumeForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const skills = document.getElementById('skills').value;
+
+            const resumeOutput = `
+                <h4>Generated Resume</h4>
+                <p><strong>Name:</strong> ${name}</p>
+                <p><strong>Email:</strong> ${email}</p>
+                <p><strong>Skills:</strong> ${skills}</p>
+            `;
+            document.getElementById('resumeOutput').innerHTML = resumeOutput;
+        });
+
+        // Handle resume analysis
+        document.getElementById('analyzeBtn').addEventListener('click', function() {
+            const jobDescription = document.getElementById('jobDescription').value;
+            const resumeFile = document.getElementById('resumeFile').files[0];
+
+            if (!resumeFile) {
+                alert("Please upload your resume.");
+                return;
+            }
+
+            if (jobDescription.trim() === "") {
+                alert("Please paste a job description.");
+                return;
+            }
+
+            // Simulate analysis (this would be replaced with actual analysis logic)
+            const analysisResults = `
+                <h4>Analysis Results</h4>
+                <p><strong>Key Skills Matched:</strong> Communication, Teamwork, Problem Solving</p>
+                <p><strong>Areas for Improvement:</strong> Technical Skills, Certifications</p>
+            `;
+            document.getElementById('analysisResults').innerHTML = analysisResults;
+        });
+    </script>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
+        <div class="row">
+            <div class="image">
+                <img draggable="false" class="tilt" src="./assets/images/imgg.avif" alt="">
+            </div>
+            <div class="content">
+                <h3>We are Ayyan ZainUddin & <br> Bilal Ahmed Khan</h3>
+                <span class="tag">Software Engineer's</span>
+                <p>We are a team of Software Engineers from Maharashtra
+                   passionate about coding and building innovative applications.<br>
+                    Ayyan Zain: Focused on learning and building Full-Stack clones.<br>
+                    Bilal Ahmed Khan: Dedicated to creating impactful software solutions.
+
+                    Together, we strive to deliver quality and grow every day.</p>
+                <div class="box-container">
+                    <div class="box">
+                        <p><span> email : </span> ayyanzain584@gmail.com</p>
+                        <p><span> place : </span> MH26 Nanded 431603, Maharashtra - India</p>
+                    </div>
+                </div>
+                <div class="resumebtn">
+                    <a href="https://drive.google.com/file/d/18mzKC-tUU4NTer1waYREe7K0hJMrpaPz/view?usp=drivesdk" target="_blank" class="btn"><span>Resume</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section 
+    <section class="skills" id="skills">
+        <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
+        <div class="container">
+            <div class="row" id="skillsContainer">
+                Skill bars can be added here
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Education Section -->
+    <section class="education" id="education">
+        <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Education</span></h1>
+        <p class="qoute">Education is not the learning of facts, but the training of the mind to think.</p>
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img draggable="false" src="./assets/images/educat/college.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Diploma in Computer Science</h3>
+                    <p>College of engineering | GT&MC</p>
+                    <h4>2022-2025 | Completed</h4>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img draggable="false" src="./assets/images/educat/school.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Secondary Education</h3>
+                    <p>Iqra International School & JR College | SSC</p>
+                    <h4>2020-2021 | Completed</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Project Section 
+    <section class="work" id="work">
+        <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
+        <div class="box-container">
+             Project boxes can be added here 
+        </div>
+        <div class="viewall">
+            <a href="/projects" class="btn"><span>View All</span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>-->
+
+    <!-- Experience Section -->
+   <!-- Experience Section -->
+ <!--<section class="experience" id="experience">
+    <h2 class="heading"><i class="fas fa-briefcase"></i> Experience </h2>
+    <div class="timeline">
+        <div class="container right">
+            <div class="content">
+                <div class="tag">
+                    <h2>Content Creator</h2>
+                </div>
+                <div class="desc">
+                    <h3>HireVision AI</h3>
+                    <p>June 24 - present</p>
+                </div>
+            </div>
+        </div>
+        <div class="container left">
+            <div class="content">
+                <div class="tag">
+                    <h2>Software Engineer</h2>
+                </div>
+                <div class="desc">
+                    <h3>Working</h3>
+                    <p>Nov 2023 - present</p>
+                </div>
+            </div>
+        </div>
+        <div class="container right">
+            <div class="content">
+                <div class="tag">
+                    <h2>Coaching</h2>
+                </div>
+                <div class="desc">
+                    <h3>GTMC</h3>
+                    <p>June 24 - present</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="morebtn">
+        <a href="/experience" class="btn"><span>View All</span>
+            <i class="fas fa-arrow-right"></i>
+        </a>
+    </div>
+</section> -->
+
+<section class="contact" id="contact">
+  
+    <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch</span></h2>
+  
+    <div class="container">
+      <div class="content">
+        <div class="image-box">
+          <img draggable="false" src="./assets/images/contact1.png" alt="">
+        </div>
+      <form id="contact-form">
+        
+        <div class="form-group">
+          <div class="field">
+            <input type="text" name="name" placeholder="Name" required>
+            <i class='fas fa-user'></i>
+          </div>
+          <div class="field">
+            <input type="text" name="email" placeholder="Email" required>
+            <i class='fas fa-envelope'></i>
+          </div>
+          <div class="field">
+            <input type="text" name="phone" placeholder="Phone">
+            <i class='fas fa-phone-alt'></i>
+          </div>
+          <div class="message">
+          <textarea placeholder="Message" name="message" required></textarea>
+          <i class="fas fa-comment-dots"></i>
+          </div>
+          </div>
+        <div class="button-area">
+          <button type="submit">
+            Submit <i class="fa fa-paper-plane"></i></button>
+        </div>
+      </form>
+    </div>
+    </div>
+  </section>
+  <!-- contact section ends -->
+
+    <!-- Footer Section -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>HireVision AI</h3>
+                <p>Thank you for visiting our website. Connect with us over socials. <br/> <br/> Keep Rising 🚀. Connect with us over live chat!</p>
+            </div>
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="#home"><i class="fas fa-chevron-circle-right"></i> Home</a>
+                <a href="#about"><i class="fas fa-chevron-circle-right"></i> About</a>
+              <!--   <a href="#skills"><i class="fas fa-chevron-circle-right"></i> Skills</a> -->
+                <a href="#education"><i class="fas fa-chevron-circle-right"></i> Education</a>
+              <!--  <a href="#work"><i class="fas fa-chevron-circle-right"></i> Work</a> -->
+                <!-- <a href="#experience"><i class="fas fa-chevron-circle-right"></i> Experience</a> -->
+            </div>
+            <div class="box">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-phone"></i> +91 805-5XX-XX14</p>
+                <p><i class="fas fa-envelope"></i> ayyanzain584@gmail.com</p>
+                <p><i class="fas fa-map-marked-alt"></i> MH26 Nanded 431603 ,Maharashtra-India</p>
+                <div class="share">
+                    <a href="https://www.linkedin.com/in/SarwatBanikar" class="fab fa-linkedin" aria-label="LinkedIn" target="_blank"></a>
+                    <a href="https://github.com/SarwatBanikar" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
+                    <a href="mailto:SarwatBanikar@gmail.com" class="fas fa-envelope" aria-label="Mail" target="_blank"></a>
+                    <a href="https://twitter.com/SarwatBanikar" class="fab fa-twitter" aria-label="Twitter" target="_blank"></a>
+                    <a href="https://t.me/lifecode5" class="fab fa-telegram-plane" aria-label="Telegram" target="_blank"></a>
+                </div>
+            </div>
+        </div>
+        <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i><a href="https://www.linkedin.com/in/Sarwat-Banikar"></a></h1>
+    </section>
+
+    <!-- Scroll Top Button -->
+    <a href="#home" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://cdnjs.cloudflare.com /ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/js/particles.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
